@@ -1,4 +1,5 @@
 from ingresar import *
+from archivos_funciones import agregar_jugador
 import random
 
 def evento_aleatorio(eventos: dict) -> int:
@@ -150,5 +151,4 @@ def comenzar_juego() -> None:
     lista.append(jugador["nombre"])
     lista.append(jugador["puntos"])
 
-    with open("jugadores.txt", "a") as archivo:
-        archivo.write(str(lista) + "\n")
+    agregar_jugador("jugadores.txt", lista)

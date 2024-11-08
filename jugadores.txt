@@ -8,3 +8,5 @@
 ['Jugador Veinte', 16600]
 ['Jugador', 0]
 ['Jugador', 10070]
+['Jugador Quince', 10620]
+['Jugador Catorce', 10600]

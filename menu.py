@@ -1,4 +1,5 @@
 from juego import *
+from archivos_funciones import leer_jugadores
 
 
 def imprimir_menu() -> None:
@@ -38,8 +39,7 @@ def menu_interaccion(opcion: int) -> int:
            comenzar_juego()
         
         case 2: 
-           print(opcion) # otra funcion
-               
+           leer_jugadores("jugadores.txt")
         
         case 3: 
            print("Gracias por jugar!");
