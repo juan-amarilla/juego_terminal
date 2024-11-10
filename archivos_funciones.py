@@ -26,4 +26,7 @@ def leer_jugadores(ruta: str) -> None:
     """
 
     with open(ruta, "r") as archivo:
-        print(archivo.read())
+        for linea in archivo:
+            linea_sin_corchetes = linea.replace(
+                "[", "").replace("]", "").strip()
+            print(linea_sin_corchetes)
