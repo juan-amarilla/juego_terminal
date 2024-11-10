@@ -1,4 +1,19 @@
-from juego import *
+"""
+Módulo que maneja la interacción con el menú del juego.
+
+Este módulo proporciona las funciones para mostrar un menú al jugador y gestionar
+las opciones seleccionadas, como comenzar el juego, mostrar las puntuaciones o salir.
+
+Funciones:
+    - imprimir_menu(): Muestra las opciones del menú al jugador.
+    - menu_interaccion(opcion: int): Procesa la opción seleccionada por el jugador
+      y ejecuta la acción correspondiente.
+
+Dependencias:
+    - comenzar_juego: Función para iniciar una nueva partida.
+    - leer_jugadores: Función para mostrar las puntuaciones guardadas.
+"""
+from juego import comenzar_juego
 from archivos_funciones import leer_jugadores
 
 

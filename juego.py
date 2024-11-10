@@ -1,6 +1,27 @@
-from ingresar import *
-from archivos_funciones import agregar_jugador
+"""
+Módulo que gestiona el desarrollo del juego de aventura en la Isla Perdida.
+
+Este módulo define varias funciones que simulan la experiencia de un jugador en un juego
+de aventura, donde el jugador interactúa con eventos aleatorios, obtiene puntos o sufre heridas,
+y busca sobrevivir en la isla.
+
+Funciones:
+    - evento_aleatorio(eventos: dict): Selecciona un evento aleatorio y presenta opciones al jugador
+    - lista_eventos(): Retorna un diccionario con diferentes eventos y sus posibles resultados
+    - obtener_puntos(sobrevivir, jugador): Calcula los puntos finales del jugador según su desempeño
+    - comenzar_juego(): Inicia el juego, maneja la interacción del jugador con los eventos y 
+    calcula los resultados finales.
+
+Dependencias:
+    - ingresar_entero: Función para ingresar números enteros.
+    - ingresar_nombre: Función para ingresar el nombre del jugador.
+    - agregar_jugador: Función para guardar los resultados de los jugadores.
+    - random.choice: Utilizado para seleccionar eventos aleatorios.
+"""
+
 import random
+from ingresar import ingresar_entero, ingresar_nombre
+from archivos_funciones import agregar_jugador
 
 
 def evento_aleatorio(eventos: dict) -> int:
